@@ -1,5 +1,7 @@
 html, body, img{
     margin: 0px;
+    width: 600px;
+    margin: auto;
 }
 
 .container{
