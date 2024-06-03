@@ -1,0 +1,83 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+    <header>
+        <div class='overlay container'>
+            <div class='intro-txt'>
+                <h1><span class='main-title'><span class='large-letter'>C</span>hicky<span class='large-letter'> L</span>icky</h1>
+                <h2>Chicken for the unwashed masses!</h2>
+            </div>
+            <img class='mascot' id='mascot' src='images/Chickenfoot.png'>
+        </div>
+    </header>
+    <main class='container'>
+        <section class='menu' id='menu'>
+            <div class='menu-item'>
+                <img class='food-img' src='/images/chicken.png'>
+                <div class='food-item-detail'>
+                    <h3>Greasy Chicken Leg</h3>
+                    <p>chicken, 6oz grease cup, comes with mayo</p>
+                    <p class='price'>$12</p>
+                </div>
+                <button class='add-item'>+</button>
+            </div>
+        </section>
+        <section class ='hide' id='order-area'>
+            <div class='order-summary' id='order-summary'>
+                <span class='your-order'><h3>Your Order</h3></div>
+                <div class='order-list'>
+                    <div class='order-total' id='order-total'>
+                    </div>
+                </div>
+                <button class='complete-order-btn' 
+                        id='complete-order-btn'>Complete order</button>
+            </div>
+        </section>            
+        </div>
+    </main>
+    <div class='payment-modal hide' id='payment-modal'>
+        <div class='modal-close'>
+            <button class='close-modal' id='close-modal'>X</button>
+        </div>
+        <p id='modal-txt'>Enter card details</p>
+        <form class='payment-form' id='payment-form'>
+            <input type='text'
+                    name='name'
+                    placeholder="Enter your name"
+                    id='input-name'
+                    required/>
+            <input type='text'
+                    name='credit card number'
+                    placeholder="Enter card number"
+                    id='input-card'
+                    required
+                    pattern="[0-9]+"
+                    minlength="16"
+                    maxlength="16"/>
+            <input type='text'
+                    name='cvv number'
+                    placeholder="Enter CVV"
+                    id='input-cvv'
+                    required
+                    pattern="[0-9]+"
+                    minlength="3"
+                    maxlength="3"/>
+            <input type='submit'
+                    class='complete-order-btn'
+                    value='Pay'
+                    id='pay-btn'>
+        </form>
+    
+	<script src="index.js" type='module'></script>
+    </body>
+</html>
+

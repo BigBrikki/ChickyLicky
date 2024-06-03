@@ -1,0 +1,342 @@
+html, body, img{
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    width:600px;
+    margin: auto;
+    padding: 20px 46px;  
+    background-color: white;  
+}
+
+header{
+    width:600px;
+    background-image: url('images/chickylickylogo.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/*overlay color for header image*/
+
+.overlay{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    background: rgba(0, 100, 0, .6);
+    justify-content: space-between;
+    width: 600px;
+}
+/*Typography*/
+
+h1, h2{
+    margin: 0px;
+    line-height: normal;
+    text-shadow: black 2px 2px 2px;
+}
+
+h1{
+    color: limegreen;
+    font-family: Moonraze, sans-serif;
+    font-size: 40px;
+}
+
+h2{
+    color: violet;
+    font-size: 20px;
+    font-family: "Pacifico";
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Moonraze;
+  src: url(/Moonrazedemo.otf);
+}
+
+.main-title{
+    font-size: 50px;
+}
+
+.large-letter{
+    font-size: 90px;
+}
+
+p{
+    font-family: "Pacifico", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8B8B8B;
+}
+
+.menu-item h3{
+    margin: 20px 0px 8px 0px;
+}
+
+h3{
+    padding-right: 15px;
+    font-family: Moonraze;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.price{
+    font-family: "Pacifico", cursive;
+    color: black;
+    font-size: 20px;
+}
+
+.your-order{
+    display: flex;
+    justify-content: center;
+}
+
+.your-order h3{
+    padding: 0px;
+}
+
+.order-items .price{
+    font-family: "Pacifico", cursive;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 12px;
+}
+
+.order-items p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding-bottom: 5px;
+    }
+
+#remove:hover {
+    font-weight: bold;
+}
+
+/*Chickenfoot animations*/
+
+.mascot{
+    width: 100px;
+    min-width: 0;
+}
+
+.mascot:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.violent-shake{
+  animation: violent-shake 0.5s;
+}
+
+.dont-look-at-me{
+    transform: scale(1.2,1.2);
+    animation: violent-shake 0.5s;
+    animation-iteration-count: 1.5;
+}
+
+@keyframes violent-shake {
+  0% { transform: translate(1px, 1px) rotate(0deg) scale(1.2,1.2); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg) scale(1.2,1.2); }
+  20% { transform: translate(-3px, 0px) rotate(1deg) scale(1.2,1.2); }
+  30% { transform: translate(3px, 2px) rotate(0deg) scale(1.2,1.2); }
+  40% { transform: translate(1px, -1px) rotate(1deg) scale(1.3,1.3); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg) scale(1.2,1.2); }
+  60% { transform: translate(-3px, 1px) rotate(0deg) scale(1.2,1.2); }
+  70% { transform: translate(3px, 1px) rotate(-1deg) scale(1.3,1.3); }
+  80% { transform: translate(-1px, -1px) rotate(1deg) scale(1.2,1.2); }
+  90% { transform: translate(1px, 2px) rotate(0deg) scale(1.4,1.4); }
+  100% { transform: translate(1px, -2px) rotate(-1deg) scale(1.2,1.2); }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*main section*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid #c2c2c2 1px;
+    padding: 30px 0px;
+}
+
+.food-img{
+    width: 80px;
+}
+
+.food-item-detail{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    line-height: 0px;
+}
+
+.menu{
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.add-item{
+    background-color: white;
+    color: #3C3C3C;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 24px;
+    border: solid #d2d2d2 1px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px 13.7px;
+    vertical-align: center;
+}
+
+.add-item:hover{
+    background-color: limegreen;
+    color: white;
+}
+
+.order-summary{
+    border-bottom: #393333 solid 2px;
+    padding-bottom: 20px;
+}
+.order-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    height: 40px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}
+
+.order-total{
+    display: flex;
+    padding-bottom: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.complete-order-btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 60px;
+    top: 1048px;
+    left: 46px;
+    padding: 18px 175px 18px 194px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+    border: none;
+    background-color:violet;
+    color: white;
+    font-weight: bold;   
+}
+
+.complete-order-btn:hover, #pay-btn:hover{
+    background-color: limegreen;
+    color: black;
+}
+
+/*Pay modal*/
+
+.hide{
+    display: none;
+}
+
+.payment-modal{
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 525px;
+    box-shadow: gray 0px 0px 200px; 
+    border-radius: 3px; 
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-close{
+    display: flex;
+    justify-content: end;
+}
+
+.close-modal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 45px;  
+    height: 45px;
+    margin: 10px; 
+    border: solid #d3d3d3 1px;
+    background-color: white;
+    color: #3C3C3C;
+}
+
+.close-modal:hover{
+    background-color: violet;
+    color: white;
+}
+
+.payment-modal p{
+    font-family: inherit;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.payment-form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+input{
+    font-family: inherit;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: black solid 1.3px;
+    opacity: 0px;
+}
+#pay-btn{
+    margin-top: 30px;
+}
+
+#modal-txt{
+    padding: 0px 40px 40px 40px;
+}
+    
