@@ -1,6 +1,6 @@
 html, body, img{
     margin: 0px;
-    width: 100%;
+    width: 600px;
     margin: auto;
 }
 
@@ -40,13 +40,13 @@ h1, h2{
 }
 
 h1{
-    color: limegreen;
+    color: violet;
     font-family: Moonraze, sans-serif;
     font-size: 40px;
 }
 
 h2{
-    color: violet;
+    color: greenyellow;
     font-size: 20px;
     font-family: "Pacifico";
 }
